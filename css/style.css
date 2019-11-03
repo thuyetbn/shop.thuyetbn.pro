@@ -1,0 +1,431 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: url('../images/background.png');
+	background-color: #191919;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+header{
+/* 	background-color: #191919; */
+/* 	height: 140px;
+	width: 1180px; */
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/* margin: 0 auto; */
+}
+/* body{
+	background: #191919;
+} */
+.logo{
+/* 	width: 285px;
+	height: 115px;
+ */	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.login{
+	text-align: right: 
+
+}
+.login ul li{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 18px;
+
+	
+}
+.fa-search{
+	padding: 3px;
+}
+.login ul li a{
+	color: white;
+	font-weight: bold
+}
+.search{
+	float: left
+}
+.contact{
+/* 	width: 100%; */
+	float: left
+}
+.contact ul li{
+	display: inline-block;
+	text-decoration: none;
+}
+.email{
+	padding-left: 5px;
+}
+.mobile{
+	color: white;
+	font-weight: bold
+}
+.contact ul li a{
+	color: white;
+	font-weight: bold
+}
+.cart{
+	padding-top: 10px;
+	text-align: right;
+}
+.cart i{
+	font-size: 28px;
+	margin-top: 10px;
+}
+.cart span{
+	color: white;
+	font-weight: bold
+}
+main{
+/* 	background: #191919;
+	margin: 0 auto;
+/* 	width: 1180px; */ */
+}
+.menu{
+	background: #555555;
+	border: none;
+	margin: 20px;
+}
+
+.nav{
+	        float:none;
+        margin: 0 auto;
+}
+.menu li{
+	border: 1px solid black
+}
+.menu li:hover{
+	background: #444444;
+}
+.active1{
+	background: #444444;
+}
+.banner-left{
+	margin-bottom: 20px;
+}
+.list-product{
+	margin-top: 20px;
+}
+/* .product{
+	height: 220px;
+} */
+.product .caption {
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 10px;
+}
+.product .caption a{
+	color: white;
+	margin: 0 auto;
+}
+.product .caption p{
+	color: green;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+.button{
+	text-align: center;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+.buy{
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background: red;
+}
+footer{
+	margin: auto;
+/* 	height: 320px;
+	width: 1180px; */
+/* 	background: #191919; */
+	text-align: center;
+	color: white;
+}
+.nav {
+/* 	margin: 0 15px; */
+/*     margin-left: 30px; */
+    display: flex;
+  	justify-content: center;
+  	flex-wrap: wrap;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar-brand{
+	opacity: 0
+	}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  .banner-left{
+		display: none
+	}
+	.buy{
+		margin-bottom: 5px;
+	}
+	.product{
+		margin-bottom: 10px;
+	}
+	.navbar-brand{
+		opacity: 1
+	}
+	.nav{
+		display: inline;
+		
+	}
+	.navbar-inverse .navbar-brand{
+		color: white !important;
+	}
+	.logo .img img{
+		margin: 0 auto;
+	}
+
+}
+@media screen and (max-width: 760px) {
+  .product .add-to-cart {
+    display: inline-block;
+  }
+}
+.modal-title{
+	text-align: center;
+	font-size: 24px;
+}
+ .affix{
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+.affix + .container-fluid {
+	padding-top: 70px;
+  }
+#hello1{
+	display: none;
+	margin-left: -1px;
+	font-size: 18px;
+	font-weight: 700;
+	display: none
+}
+#logout2{
+	font-size: 18px;
+	font-weight: 700;
+	display: none
+}
+.form-thanhtoan label{
+	color: white;
+}.title{
+	background: #ad9a9a;
+}
+.product:hover{
+	border: 1px solid green;
+/* 	transform: scale(1.1); */
+}
+.product{
+	height: 235px;
+}
+.product .add-to-cart{
+	display: none
+
+}
+.add-cart{
+	text-align: center;
+}
+.button{
+	margin: 0 auto;
+
+}
+#count-shop{
+	display: none;
+	padding: 3px 10px;
+	/* background: red; */
+	color: red;
+}
+#count-shop1{
+	display: none;
+	padding: 3px 10px;
+/* 	background: red; */
+	color: red;
+}
+.product-color{
+	color: white;
+}
+.product .img{
+	/* height: 250px; */
+	width: 100%;
+}
+.title-product{
+	text-align: center;
+	font-weight: 700;
+	font-size: 28px;
+	color: green;
+}
+.des-product{
+	padding: 10px 0px;
+	border-bottom: 3px dotted #ad9a9a;
+	border-top: 3px dotted #ad9a9a;
+}
+.imgage-product{
+	text-align: center;
+
+}
+.imgage-product img{
+	width: 100%;
+}
+.priceProduct{
+	text-align: center;
+	font-size: 28px;
+	font-weight: 900;
+	color: red;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+#thanhtoanButton{
+	margin-top: 20px;
+}
+.gachchan{
+	border-bottom: 3px solid gray;	
+
+}
+.info1 p{
+	border-bottom: 1px solid gray;
+
+}
+.info1 a{
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	font-style: italic
+	
+}
+.info1{
+	width: 50%;
+}
+.copyright{
+	background: black;
+	line-height: 35px	
+}
+.background-color{
+	background: #191919;
+}
+.facebook{
+	margin-top: 10px;
+}
+.facebook img:hover{
+	opacity:0.7
+}
+.facebook img{
+	margin-right: 5px;
+}
+.link-bar{
+	color: white
+}
+.link-bar span{
+	color: white
+}
+.link-bar a{
+	color: white
+}
+
+.top-ban-chay .title-top{
+	border-bottom: 2px solid white
+}
+
+.top-ban-chay .title-top h3{
+	color: white;
+	text-align: center;
+} 
+.ban-chay{
+	margin-top: 15px;
+}
+.indexlogin{
+	display: none
+}
+.indexlogin1{
+	display: none
+}
+/* #index{
+	display: none
+} */
+.form-lien-he{
+	text-align: right;
+	/* margin: 0  auto; */
+	color: white;
+	
+}
+.form-control{
+	margin-bottom: 10px;
+}
+.form-lien-he span{
+	color: red;
+}
+.form-lien-he label{
+	text-align: right
+}
+.form-lien-he input{
+	background-color: #292929;
+}
+.lien-he-title{
+	text-align: center;
+	color: white
+}
+.iconfaa {
+	text-align: right;
+}
+.iconfa i{
+	font-size: 36px;
+}
+.lien-he-title-father 	{
+	background: #222222;
+}
+.so-luong{
+	margin: 0 auto;
+}
+.search1 button,input{
+	background-color: #292929;
+}
+.search1 input{
+	background-color: #292929;
+}
+table, th, td {
+	color: white;
+	border: 1px solid white;
+	border-collapse: collapse;
+	padding: 10px;
+}
+table th, td {
+  padding: 5px;
+  text-align: left;    
+}
+form .title{
+	background: #353535
+}
+.form-thanh-toan{
+	margin: 20px 0px;
+}
+.thanhtoan-giohang{
+	text-align: center
+}
+.thanhtoan-giohang a{
+	text-decoration: none
+}
+#thanhtoan-vali label{
+	color: white;
+}
+
+
+
+
+/* 404 ------------------- */
