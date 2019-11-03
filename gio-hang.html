@@ -1,0 +1,272 @@
+<html lang=""><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title Page</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="fonts/fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	
+
+	</head>
+	<body>
+		<header>
+			<div class="container container-fluid">
+				<div class="row">
+					<div class="header">
+						<div class="col-md-4 col-sm-4">
+							<div class="logo">
+								<div class="img">
+									<a href="index.html"><img src="images/logo.png" alt=""  class="img-responsive"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-8">
+							<div class="login" style="text-align: right">
+								<ul>
+									<li><a href="" style="color:#00ff2d" class="btn btn-danger">Các hình thức thanh toán</a></li>
+									<li ><a href="" class="btn btn-success" data-toggle="modal" data-target="#myModal" id="index">Đăng nhập</a></li>
+									<li ><a href="" class="btn btn-primary" data-toggle="modal" data-target="#myModal1" id="index1">Đăng kí</a></li>
+									<li ><a href="" class="btn btn-success indexLogin " id="hello" >Xin chào </a></li>
+									<li><a href="" class="btn btn-primary indexLogin1"   id="logout">Thoát</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="search col-sm-8 col-md-4">
+							<form action="/action_page.php">
+								<div class="input-group search1">
+									<input type="text" class="form-control" placeholder="Tìm kiếm" name="search">
+									<div class="input-group-btn">
+										<button class="btn btn-default" type="submit"><i class="fas fa-search " aria-hidden="true"></i></button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="contact col-md-4 col-sm-8" style="padding-top: 9px;text-align: right;">
+							<ul>
+								<li class="mobile"><i class="fa fa-phone"></i> 0973.086.596  </li>
+								<li class="email"><a href="mailto:thuyetnv96@gmail.com"><i class="fa fa-envelope"></i> thuyetnv96@gmail.com</a></li>
+							</ul>
+						</div>
+						<div class="cart col-md-8">
+							<a href="gio-hang.html"><i class="fas fa-shopping-cart shopping-cart"></i>
+							<span>Giỏ hàng</span><span id="count-shop"></span></a>
+						</div>
+					</div>
+				</div>
+				<form>
+					<tr>
+						<td colspan="" rowspan="" headers=""></td>
+					</tr>
+				</form>
+			</div>
+
+		</header><!-- /header -->
+		<main>
+			<div class="container product-color background-color">
+				<div class="row">
+					<nav class="navbar navbar-inverse">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span> 
+								</button>
+								<a class="navbar-brand" href="#">Home</a>
+							</div>
+							<div class="collapse navbar-collapse" id="myNavbar">
+								<ul class="nav navbar-nav">
+									<li class="active" id="active"><a href="index.html">Home</a></li>
+									<li><a href="#">PUBG</a></li>
+							        <li><a href="#">CS:GO</a></li> 
+							        <li><a href="#">TFT</a></li> 
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<div class="col-md-12">
+						<div class="link-bar">
+							<i class="fa fa-home" aria-hidden="true"></i>
+							<span> / </span>
+							<a href="index.html">Home</a>
+							<span> / </span>
+							<a href="gio-hang.html">Giỏ hàng</a>
+						</div>
+					</div>
+					<div class="col-md-12 lien-he-title-father">
+						<div class="row">
+							<div class="lien-he-title">
+								<h3>Giỏ hàng</h3>
+							</div></div>
+						</div>
+					</div>
+					<form class="col-md-12 form-thanh-toan">
+						<div class="row">
+							<table style="width:100%">
+							  <tr class="title">
+							    <th>Tên sản phẩm</th>
+							    <th>Mã game</th>
+							    <th>Số lượng</th>
+							    <th>Đơn giá</th>
+							    <th>Tổng cộng</th>
+							  </tr>
+							  <tr>
+							    <td>PlayerUnknown's Battlegrounds PUBG</td>
+							    <td>vnpubg</td>
+							    <td>1</td>
+							    <td>500000</td>
+							    <td>500000</td>
+							  </tr>
+							  <tr>
+							    <td>PlayerUnknown's Battlegrounds PUBG</td>
+							    <td>vnpubg</td>
+							    <td>1</td>
+							    <td>500000</td>
+							    <td>500000</td>
+							  </tr>
+							  <tr>
+							    <td>PlayerUnknown's Battlegrounds PUBG</td>
+							    <td>vnpubg</td>
+							    <td>1</td>
+							    <td>500000</td>
+							    <td>500000</td>
+							  </tr>
+							  <tr>
+							    <td>PlayerUnknown's Battlegrounds PUBG</td>
+							    <td>vnpubg</td>
+							    <td>1</td>
+							    <td>500000</td>
+							    <td>500000</td>
+							  </tr>
+							  <tr class="title totall">
+							    <th></th>
+							    <th></th>
+							    <th></th>
+							    <th>Tổng cộng</th>
+							    <th>2.000.000</th>
+							  </tr>
+							</table>
+						</div>
+					</form>
+					<div class="col-md-12 thanhtoan-giohang">
+						<div class="row">
+							<a href="thanh-toan.html" class="btn-lg btn-info" style="text-decoration: none,">Thanh toán</a>
+						</div>
+					</div>
+				</div>
+
+
+
+
+		</main>
+					<footer>
+				<div class="container background-color" style="text-align: left">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="lienhe gachchan">
+								<h4>LIÊN HỆ</h4>
+
+							</div>
+							<div class="dieukhoan info1">
+								<a href="lien-he.html"><p>Liên hệ</p></a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="social gachchan">
+								<h4>SOCIAL</h4>
+							</div>
+							<div class="facebook">
+								<img src="images/facebook.png" alt="">
+								<img src="images/youtube.png" alt="">
+								<img src="images/google_plus.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="danhmucsanpham gachchan">
+								<h4>DANH MỤC SẢN PHẨM</h4>
+							</div>
+							<div class="info-admin info1">
+								<a href=""><p>PUBG</p></a>
+							</div>
+							<div class="chinhsach info1">
+								<a href=""><p>CS:GO</p></a>
+							</div>
+							<div class="dieukhoan info1">
+								<a href=""><p>STEAM</p></a>
+							</div>
+						</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="info gachchan">
+								<h4>THUYETBN</h4>
+							</div>
+							<div class="info-admin info1">
+								<a href=""><p>Giới thiệu</p></a>
+							</div>
+							<div class="chinhsach info1">
+								<a href=""><p>Chính sách</p></a>
+							</div>
+							<div class="dieukhoan info1">
+								<a href=""><p>Điều khoản</p></a>
+							</div>
+						</div>
+					</div>
+					</div>
+				<div class="copyright">
+					<p><i class="fas fa-copyright"></i> Copyright by shop.thuyetbn.pro</p>
+				</div>
+			</footer>
+
+
+
+
+			<!-- Bootstrap JavaScript -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+			<script src="js/jquery.validate.min.js"></script>
+			<script src="js/style.js"></script>
+
+			<script >
+				$('#login').click(function(){
+					if(('sessionStorage') in window && window['sessionStorage'] !== null){
+						var lastname = $('#userName').val();
+						sessionStorage.setItem('login',lastname);
+						var lastname = sessionStorage.getItem('login');
+						
+					}
+					else{
+						alert('Trình duyệt không hỗ trợ');
+					}
+				});
+				$('#reg-user').click(function(){
+					if(('sessionStorage') in window && window['sessionStorage'] !== null){
+						var lastname = $('#userName1').val();
+						sessionStorage.setItem('login',lastname);
+						var lastname = sessionStorage.getItem('login');
+						
+					}
+					else{
+						alert('Trình duyệt không hỗ trợ');
+					}
+				});
+			</script>
+			<script src="login.js"></script>
+
+
+		</body></html>

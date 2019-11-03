@@ -1,0 +1,283 @@
+<html lang=""><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title Page</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="fonts/fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		
+
+	</head>
+	<body onload="checkLogin()" >
+		<header>
+			<div class="container container-fluid">
+				<div class="row">
+					<div class="header">
+						<div class="col-md-4 col-sm-4">
+							<div class="logo">
+								<div class="img">
+									<a href="index.html">
+										<img src="images/logo.png" alt=""  class="img-responsive"></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<div class="login" style="text-align: right">
+									<ul>
+										<li><a href="" style="color:#00ff2d" class="btn btn-danger">Các hình thức thanh toán</a></li>
+										<li><a href="" class="btn btn-success" id="hello">Xin chào </a></li>
+										<li><a href="" class="btn btn-primary" onclick="logout()" id="logout">Thoát</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="search col-sm-8 col-md-4">
+								<form action="/action_page.php">
+									<div class="input-group search1">
+										<input type="text" class="form-control" placeholder="Tìm kiếm" name="search">
+										<div class="input-group-btn">
+											<button class="btn btn-default" type="submit"><i class="fas fa-search " aria-hidden="true"></i></button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="contact col-md-4 col-sm-8" style="padding-top: 9px;text-align: right;">
+								<ul>
+									<li class="mobile"><i class="fa fa-phone"></i> 0973.086.596  </li>
+									<li class="email"><a href="mailto:thuyetnv96@gmail.com"><i class="fa fa-envelope"></i> thuyetnv96@gmail.com</a></li>
+								</ul>
+							</div>
+							<div class="cart col-md-8">
+								<a href="gio-hang.html"><i class="fas fa-shopping-cart shopping-cart"></i>
+								<span>Giỏ hàng</span><span id="count-shop1"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</header><!-- /header -->
+			<main>
+				<div class="container background-color">
+					<div class="row">
+						<div class="row">
+						<nav class="navbar navbar-inverse">
+						  <div class="container-fluid">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span> 
+						      </button>
+						      <a class="navbar-brand" href="#">Home</a>
+						    </div>
+						    <div class="collapse navbar-collapse" id="myNavbar">
+						      <ul class="nav navbar-nav">
+						        <li class="active" id="active"><a href="index.html">Home</a></li>
+									<li><a href="#">PUBG</a></li>
+							        <li><a href="#">CS:GO</a></li> 
+							        <li><a href="#">TFT</a></li> 
+						    </div>
+						  </div>
+						</nav>
+					<div class="col-md-12">
+						<div class="link-bar">
+							<i class="fa fa-home" aria-hidden="true"></i>
+							<span> / </span>
+							<a href="index.html">Home</a>
+							<span> / </span>
+							<a href="thanh-toan.html">Thanh toán</a>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="lien-he-title">
+							<h3>Thanh Toán</h3>
+						</div>
+					</div
+							<div class=" thanhtoan form-thanhtoan col-md-12">
+								<form id="thanhtoan-vali" method="post" action="" data-toggle="modal">
+									<div class="col-md-3"></div>
+									<div class="col-md-6 container">
+										<div class="form-group ">
+											<div class="col-md-12">
+												<label for="name-tt">Họ và tên: </label>
+											</div>
+
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<input type="text" class="form-control" id="ho-tt" name="ho" placeholder="Họ và tên đệm">
+											</div>
+
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<input type="text" class="form-control" id="ten-tt" name="ten" placeholder="Tên">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-md-12">
+												<label for="adress">Địa chỉ: </label>
+											</div>
+											<div class="col-md-4 col-sm-4 col-xs-4">
+												<input type="text" class="form-control" id="xa-tt" name="xa" placeholder="Xã, Phường, Thị trấn">
+											</div>
+											<div class="col-md-4 col-sm-4 col-xs-4">
+												<input type="text" class="form-control" id="quan-tt" name="quan" placeholder="Quận, Huyện">
+											</div>
+											<div class="col-md-4 col-sm-4 col-xs-4">
+												<input type="text" class="form-control" id="tinh-tt" name="tinh" placeholder="Tỉnh, Thành Phố">
+											</div>
+											<div class="form-group">
+												<div class="col-md-12">
+
+													<label for="phone-tt">Số điện thoại: </label>
+												</div>
+												<div class="col-md-12">
+													<input type="text" class="form-control " id="phone-tt" name="phonett" placeholder="số điện thoại">
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-12">
+													<label for="email">Email: </label>
+												</div>
+												<div class="col-md-12">
+													<input type="email" class="form-control" id="email-tt" name="emailtt" placeholder="Địa chỉ Email">
+												</div>
+											</div>
+											<div class="col-md-12" style="color: white">
+												<!-- <input id="myCheck" name="xacnhandonhang" type="checkbox" required >Xác nhận đơn hàng<br> -->
+												<br><input id="myCheck" type="checkbox" name="xacnhandonhang" value="Bike" required >  Xác nhận đơn hàng<br>
+											</div>
+											<div class="col-md-12">
+												<input type="submit" id="thanhtoanButton" class="btn btn-info center-block" value="Thanh toán"  />
+												<!-- <input type="submit " value="Submit"  id="thanhtoanButton" class="btn btn-info btn-lg center-block"  >Thanh toán</input> -->
+
+											</div>
+
+										</form>
+									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="myModal" role="dialog">
+									  <div class="modal-dialog">
+
+    <!-- Modal content-->
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal">&times;</button>
+									        <h4 class="modal-title">Mua hàng thành công</h4>
+									      </div>
+									      <div class="modal-body" id="alerttt">
+									        
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									      </div>
+									    </div>
+
+									  </div>
+								</div>
+								<!-- Trigger the modal with a button -->
+
+
+							</div>
+
+
+
+
+
+
+
+						</main>
+
+
+			<footer>
+				<div class="container background-color" style="text-align: left">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="lienhe gachchan">
+								<h4>LIÊN HỆ</h4>
+
+							</div>
+							<div class="dieukhoan info1">
+								<a href="lien-he.html"><p>Liên hệ</p></a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="social gachchan">
+								<h4>SOCIAL</h4>
+							</div>
+							<div class="facebook">
+								<img src="images/facebook.png" alt="">
+								<img src="images/youtube.png" alt="">
+								<img src="images/google_plus.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="danhmucsanpham gachchan">
+								<h4>DANH MỤC SẢN PHẨM</h4>
+							</div>
+							<div class="info-admin info1">
+								<a href=""><p>PUBG</p></a>
+							</div>
+							<div class="chinhsach info1">
+								<a href=""><p>CS:GO</p></a>
+							</div>
+							<div class="dieukhoan info1">
+								<a href=""><p>STEAM</p></a>
+							</div>
+						</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="info gachchan">
+								<h4>THUYETBN</h4>
+							</div>
+							<div class="info-admin info1">
+								<a href=""><p>Giới thiệu</p></a>
+							</div>
+							<div class="chinhsach info1">
+								<a href=""><p>Chính sách</p></a>
+							</div>
+							<div class="dieukhoan info1">
+								<a href=""><p>Điều khoản</p></a>
+							</div>
+						</div>
+					</div>
+					</div>
+				<div class="copyright">
+					<p><i class="fas fa-copyright"></i> Copyright by shop.thuyetbn.pro</p>
+				</div>
+			</footer>
+
+
+
+
+
+						<!-- Bootstrap JavaScript -->
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+						<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js">
+							
+						</script>
+						<!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script> -->
+						<script src="js/jquery.validate.min.js"></script>
+						<script src="login.js"></script>
+						<script src="js/style.js"></script>
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+						<script src="js/bootstrap.min.js"></script>
+						<!-- <script src="js/bootstrap.min.js"></script>
+						<link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+
+					
+
+					</body>
+					</html>
