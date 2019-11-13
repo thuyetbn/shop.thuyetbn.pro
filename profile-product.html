@@ -2,13 +2,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Title Page</title>
+	<title>Chi tiết sản phẩm</title>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="fonts/fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
-
+	<link rel="shortcut icon" type="image/png" href="images/fava.png"/>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -214,22 +214,17 @@
 				<div class="container background-color" style="text-align: left">
 					<div class="row">
 						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="lienhe gachchan">
-								<h4>LIÊN HỆ</h4>
-
+							<div class="info gachchan">
+								<h4>THUYETBN</h4>
+							</div>
+							<div class="info-admin info1">
+								<a href=""><p>Giới thiệu</p></a>
+							</div>
+							<div class="chinhsach info1">
+								<a href=""><p>Chính sách</p></a>
 							</div>
 							<div class="dieukhoan info1">
-								<a href="lien-he.html"><p>Liên hệ</p></a>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="social gachchan">
-								<h4>SOCIAL</h4>
-							</div>
-							<div class="facebook">
-								<img src="images/facebook.png" alt="">
-								<img src="images/youtube.png" alt="">
-								<img src="images/google_plus.png" alt="">
+								<a href=""><p>Điều khoản</p></a>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12">
@@ -247,17 +242,25 @@
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="info gachchan">
-								<h4>THUYETBN</h4>
+							<div class="social gachchan">
+								<h4>SOCIAL</h4>
 							</div>
-							<div class="info-admin info1">
-								<a href=""><p>Giới thiệu</p></a>
+							<div class="facebook">
+								<img src="images/facebook.png" alt="">
+								<img src="images/youtube.png" alt="">
+								<img src="images/google_plus.png" alt="">
 							</div>
-							<div class="chinhsach info1">
-								<a href=""><p>Chính sách</p></a>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="lienhe gachchan">
+								<h4>LIÊN HỆ</h4>
+
 							</div>
 							<div class="dieukhoan info1">
-								<a href=""><p>Điều khoản</p></a>
+								<a href="lien-he.html"><p>Liên hệ</p></a>
+							</div>
+							<div class="img-lienhe">
+								<img src="images/logo.png" alt="" width="100%">
 							</div>
 						</div>
 					</div>
@@ -266,6 +269,101 @@
 					<p><i class="fas fa-copyright"></i> Copyright by shop.thuyetbn.pro</p>
 				</div>
 			</footer>
+
+			<div class="dangki" >
+				<div id="myModal1" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Đăng kí</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form action="profile-product.html" id="dangki">
+			        	<div class="form-group">
+						    <label for="name">Tên đăng nhập</label>
+						    <input type="name" class="form-control" name="newUser" id="userName1" placeholder="Tên đăng nhập">
+					  </div>
+					  <div class="form-group">
+					    <label for="phone">Số điện thoại:</label>
+					    <input type="phone" class="form-control" name="newPhone" id="phone" placeholder="Số điện thoại">
+					  </div>
+					  <div class="form-group">
+					    <label for="email">Email:</label>
+					    <input type="email" class="form-control" name="newEmail" id="email" placeholder="Email">
+					  </div>
+					  <div class="form-group">
+					    <label for="pwd">Mật khẩu:</label>
+					    <input type="password" class="form-control" name="newPass" id="newpassword" placeholder="Mật khẩu">
+					  </div>
+					  <div class="form-group">
+					    <label for="pwd">Nhập lại mật khẩu:</label>
+					    <input type="password" class="form-control" name="confirmNewPassword" id="confirmNewPassword" placeholder="Mật khẩu">
+					  </div>
+					  <div>
+		                
+		                <input name="dieukhoan" type="checkbox">
+		               <a href=""><label >Điều khoản trang web</label></a>
+
+		            </div>
+					  <button type="submit" class="btn btn-success center-block" id="reg-user">Đăng ký</button>
+					</form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-danger" data-dismiss="modal">Thoát</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			</div>
+
+
+
+
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Đăng nhập</h4>
+						</div>
+						<div class="modal-body">
+							<form class="form-horizontal " id="dangnhap" action="profile-product.html">
+								<div class="form-group">
+									<label class="control-label col-sm-3" for="userName">Tên đăng nhập:</label>
+									<div class="col-sm-8">
+										<input type="name" class="form-control" name="userLogin" id="userName" placeholder="Tên đăng nhập">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3" >Mật khẩu:</label>
+									<div class="col-sm-8"> 
+										<input type="password" name="matkhau" class="form-control" id="password" placeholder="Mật khẩu">
+									</div>
+								</div>
+								<div class="form-group"> 
+									<div class="col-sm-offset-2 col-sm-6">
+										<div class="checkbox">
+											<label><input type="checkbox"> Ghi nhớ</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group"> 
+									<div class="col-sm-offset-2 col-sm-8">
+										<button type="submit" class="btn btn-success center-block" id="login">Đăng nhập</button>
+									</div>
+								</div>
+							</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Thoát</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
 
 
 
@@ -278,7 +376,28 @@
 			<script src="js/jquery.validate.min.js"></script>
 			<script src="js/style.js"></script>
 			<script >
-
+				$('#login').click(function(){
+					if(('sessionStorage') in window && window['sessionStorage'] !== null){
+						var lastname = $('#userName').val();
+						sessionStorage.setItem('login',lastname);
+						var lastname = sessionStorage.getItem('login');
+						
+					}
+					else{
+						alert('Trình duyệt không hỗ trợ');
+					}
+				});
+				$('#reg-user').click(function(){
+					if(('sessionStorage') in window && window['sessionStorage'] !== null){
+						var lastname = $('#userName1').val();
+						sessionStorage.setItem('login',lastname);
+						var lastname = sessionStorage.getItem('login');
+						
+					}
+					else{
+						alert('Trình duyệt không hỗ trợ');
+					}
+				});
 
 				var titleproduct = sessionStorage.getItem("titleproduct");
 				$('.title-product').html(titleproduct);

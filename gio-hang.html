@@ -2,28 +2,28 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Title Page</title>
+	<title>Giỏ hàng</title>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="fonts/fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
-
+	<link rel="shortcut icon" type="image/png" href="images/fava.png"/>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
-	
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-	
+
 
 	</head>
-	<body>
+	<body onload="checkLogin()">
 		<header>
 			<div class="container container-fluid">
 				<div class="row">
@@ -64,108 +64,169 @@
 						</div>
 						<div class="cart col-md-8">
 							<a href="gio-hang.html"><i class="fas fa-shopping-cart shopping-cart"></i>
-							<span>Giỏ hàng</span><span id="count-shop"></span></a>
-						</div>
-					</div>
-				</div>
-				<form>
-					<tr>
-						<td colspan="" rowspan="" headers=""></td>
-					</tr>
-				</form>
-			</div>
-
-		</header><!-- /header -->
-		<main>
-			<div class="container product-color background-color">
-				<div class="row">
-					<nav class="navbar navbar-inverse">
-						<div class="container-fluid">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span> 
-								</button>
-								<a class="navbar-brand" href="#">Home</a>
-							</div>
-							<div class="collapse navbar-collapse" id="myNavbar">
-								<ul class="nav navbar-nav">
-									<li class="active" id="active"><a href="index.html">Home</a></li>
-									<li><a href="#">PUBG</a></li>
-							        <li><a href="#">CS:GO</a></li> 
-							        <li><a href="#">TFT</a></li> 
-								</ul>
+								<span>Giỏ hàng</span><span id="count-shop"></span></a>
 							</div>
 						</div>
-					</nav>
-					<div class="col-md-12">
-						<div class="link-bar">
-							<i class="fa fa-home" aria-hidden="true"></i>
-							<span> / </span>
-							<a href="index.html">Home</a>
-							<span> / </span>
-							<a href="gio-hang.html">Giỏ hàng</a>
-						</div>
 					</div>
-					<div class="col-md-12 lien-he-title-father">
-						<div class="row">
-							<div class="lien-he-title">
-								<h3>Giỏ hàng</h3>
-							</div></div>
-						</div>
-					</div>
-					<form class="col-md-12 form-thanh-toan">
-						<div class="row">
-							<table style="width:100%">
-							  <tr class="title">
-							    <th>Tên sản phẩm</th>
-							    <th>Mã game</th>
-							    <th>Số lượng</th>
-							    <th>Đơn giá</th>
-							    <th>Tổng cộng</th>
-							  </tr>
-							  <tr>
-							    <td>PlayerUnknown's Battlegrounds PUBG</td>
-							    <td>vnpubg</td>
-							    <td>1</td>
-							    <td>500000</td>
-							    <td>500000</td>
-							  </tr>
-							  <tr>
-							    <td>PlayerUnknown's Battlegrounds PUBG</td>
-							    <td>vnpubg</td>
-							    <td>1</td>
-							    <td>500000</td>
-							    <td>500000</td>
-							  </tr>
-							  <tr>
-							    <td>PlayerUnknown's Battlegrounds PUBG</td>
-							    <td>vnpubg</td>
-							    <td>1</td>
-							    <td>500000</td>
-							    <td>500000</td>
-							  </tr>
-							  <tr>
-							    <td>PlayerUnknown's Battlegrounds PUBG</td>
-							    <td>vnpubg</td>
-							    <td>1</td>
-							    <td>500000</td>
-							    <td>500000</td>
-							  </tr>
-							  <tr class="title totall">
-							    <th></th>
-							    <th></th>
-							    <th></th>
-							    <th>Tổng cộng</th>
-							    <th>2.000.000</th>
-							  </tr>
-							</table>
-						</div>
+					<form>
+						<tr>
+							<td colspan="" rowspan="" headers=""></td>
+						</tr>
 					</form>
-					<div class="col-md-12 thanhtoan-giohang">
-						<div class="row">
-							<a href="thanh-toan.html" class="btn-lg btn-info" style="text-decoration: none,">Thanh toán</a>
+				</div>
+
+			</header><!-- /header -->
+			<main>
+				<div class="container product-color background-color">
+					<div class="row">
+						<nav class="navbar navbar-inverse">
+							<div class="container-fluid">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span> 
+									</button>
+									<a class="navbar-brand" href="#">Home</a>
+								</div>
+								<div class="collapse navbar-collapse" id="myNavbar">
+									<ul class="nav navbar-nav">
+										<li class="active" id="active"><a href="index.html">Home</a></li>
+										<li><a href="#">PUBG</a></li>
+										<li><a href="#">CS:GO</a></li> 
+										<li><a href="#">TFT</a></li> 
+									</ul>
+								</div>
+							</div>
+						</nav>
+						<div class="col-md-12">
+							<div class="link-bar">
+								<i class="fa fa-home" aria-hidden="true"></i>
+								<span> / </span>
+								<a href="index.html">Home</a>
+								<span> / </span>
+								<a href="gio-hang.html">Giỏ hàng</a>
+							</div>
+						</div>
+						<div class="col-md-12 lien-he-title-father">
+							<div class="row">
+								<div class="lien-he-title">
+									<h3>Giỏ hàng</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 form-thanh-toan">
+						<div class="shopping-cart col-md-12">
+							<div class="column-labels ">
+								<label class="product-image">Image</label>
+								<label class="product-details">Product</label>
+								<label class="product-price">Price</label>
+								<label class="product-quantity">Quantity</label>
+								<label class="product-removal">Remove</label>
+								<label class="product-line-price">Total</label>
+							</div>
+
+							<div class="product2">
+								<div class="product-image col-md-3 col-sm-3">
+									<div class="row">
+										<img src="images/shop/minecraft-produktbild-460x215-266x125.png" style="width: 100%">
+									</div>
+								</div>
+								<div class="product-details col-md-3 col-sm-3">
+										<div class="product-title">Minecraft Windows 10 Edition</div>
+										<p class="product-description"> Minecraft Windows 10 Edition</p>
+								</div>
+								<div class="product-price">300000</div>
+										<div class="product-quantity">
+											<input type="number" value="1" min="1">
+										</div>
+								<div class="product-removal">
+									<button class="remove-product">Remove</button>
+								</div>
+								<div class="product-line-price">300000</div>
+							</div>
+							<div class="product2">
+								<div class="product-image col-md-3 col-sm-3">
+									<div class="row">
+										<img src="images/shop/minecraft-produktbild-460x215-266x125.png" style="width: 100%">
+									</div>
+								</div>
+								<div class="product-details col-md-3 col-sm-3">
+										<div class="product-title">Minecraft Windows 10 Edition</div>
+										<p class="product-description"> Minecraft Windows 10 Edition</p>
+								</div>
+								<div class="product-price">300000</div>
+										<div class="product-quantity">
+											<input type="number" value="1" min="1">
+										</div>
+								<div class="product-removal">
+									<button class="remove-product">Remove</button>
+								</div>
+								<div class="product-line-price">300000</div>
+							</div>
+							<div class="product2">
+								<div class="product-image col-md-3 col-sm-3">
+									<div class="row">
+										<img src="images/shop/minecraft-produktbild-460x215-266x125.png" style="width: 100%">
+									</div>
+								</div>
+								<div class="product-details col-md-3 col-sm-3">
+										<div class="product-title">Minecraft Windows 10 Edition</div>
+										<p class="product-description"> Minecraft Windows 10 Edition</p>
+								</div>
+								<div class="product-price">300000</div>
+										<div class="product-quantity">
+											<input type="number" value="1" min="1">
+										</div>
+								<div class="product-removal">
+									<button class="remove-product">Remove</button>
+								</div>
+								<div class="product-line-price">300000</div>
+							</div>
+							<div class="product2">
+								<div class="product-image col-md-3 col-sm-3">
+									<div class="row">
+										<img src="images/shop/minecraft-produktbild-460x215-266x125.png" style="width: 100%">
+									</div>
+								</div>
+								<div class="product-details col-md-3 col-sm-3">
+										<div class="product-title">Minecraft Windows 10 Edition</div>
+										<p class="product-description"> Minecraft Windows 10 Edition</p>
+								</div>
+								<div class="product-price">300000</div>
+										<div class="product-quantity">
+											<input type="number" value="1" min="1">
+										</div>
+								<div class="product-removal">
+									<button class="remove-product">Remove</button>
+								</div>
+								<div class="product-line-price">300000</div>
+							</div>
+
+							
+
+							<div class="totals">
+								<div class="totals-item">
+									<label>Tổng</label>
+									<div class="totals-value" id="cart-subtotal">1200000.00</div>
+								</div>
+								<div class="totals-item">
+									<label>Thuế VAT (5%)</label>
+									<div class="totals-value" id="cart-tax">60000.00</div>
+								</div>
+								<div class="totals-item">
+									<label>Phí Ship</label>
+									<div class="totals-value" id="cart-shipping">15000.00</div>
+								</div>
+								<div class="totals-item totals-item-total">
+									<label>Tất cả</label>
+									<div class="totals-value" id="cart-total">1275000.00</div>
+								</div>
+							</div>
+
+							<a href="thanh-toan.html"><button class="checkout">Thanh toán</button></a>
+
 						</div>
 					</div>
 				</div>
@@ -173,45 +234,10 @@
 
 
 
-		</main>
-					<footer>
+			</main>
+			<footer>
 				<div class="container background-color" style="text-align: left">
 					<div class="row">
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="lienhe gachchan">
-								<h4>LIÊN HỆ</h4>
-
-							</div>
-							<div class="dieukhoan info1">
-								<a href="lien-he.html"><p>Liên hệ</p></a>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="social gachchan">
-								<h4>SOCIAL</h4>
-							</div>
-							<div class="facebook">
-								<img src="images/facebook.png" alt="">
-								<img src="images/youtube.png" alt="">
-								<img src="images/google_plus.png" alt="">
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="danhmucsanpham gachchan">
-								<h4>DANH MỤC SẢN PHẨM</h4>
-							</div>
-							<div class="info-admin info1">
-								<a href=""><p>PUBG</p></a>
-							</div>
-							<div class="chinhsach info1">
-								<a href=""><p>CS:GO</p></a>
-							</div>
-							<div class="dieukhoan info1">
-								<a href=""><p>STEAM</p></a>
-							</div>
-						</div>
-						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12">
 							<div class="info gachchan">
 								<h4>THUYETBN</h4>
@@ -226,12 +252,49 @@
 								<a href=""><p>Điều khoản</p></a>
 							</div>
 						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="danhmucsanpham gachchan">
+								<h4>DANH MỤC SẢN PHẨM</h4>
+							</div>
+							<div class="info-admin info1">
+								<a href=""><p>PUBG</p></a>
+							</div>
+							<div class="chinhsach info1">
+								<a href=""><p>CS:GO</p></a>
+							</div>
+							<div class="dieukhoan info1">
+								<a href=""><p>STEAM</p></a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="social gachchan">
+								<h4>SOCIAL</h4>
+							</div>
+							<div class="facebook">
+								<img src="images/facebook.png" alt="">
+								<img src="images/youtube.png" alt="">
+								<img src="images/google_plus.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="lienhe gachchan">
+								<h4>LIÊN HỆ</h4>
+
+							</div>
+							<div class="dieukhoan info1">
+								<a href="lien-he.html"><p>Liên hệ</p></a>
+							</div>
+							<div class="img-lienhe">
+								<img src="images/logo.png" alt="" width="100%">
+							</div>
+						</div>
 					</div>
-					</div>
+				</div>
 				<div class="copyright">
 					<p><i class="fas fa-copyright"></i> Copyright by shop.thuyetbn.pro</p>
 				</div>
 			</footer>
+
 
 
 
@@ -248,7 +311,7 @@
 						var lastname = $('#userName').val();
 						sessionStorage.setItem('login',lastname);
 						var lastname = sessionStorage.getItem('login');
-						
+
 					}
 					else{
 						alert('Trình duyệt không hỗ trợ');
@@ -259,7 +322,7 @@
 						var lastname = $('#userName1').val();
 						sessionStorage.setItem('login',lastname);
 						var lastname = sessionStorage.getItem('login');
-						
+
 					}
 					else{
 						alert('Trình duyệt không hỗ trợ');
